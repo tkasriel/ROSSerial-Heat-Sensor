@@ -17,10 +17,5 @@ void setup() {
 }
 
 void loop() {
-  // spinOnce must be run every frame, so we use a timer variable instead
-  if (millis() > sub_timer) {
-    
-  }
-  nh.spinOnce();
-
+   nh.spinOnce();
 }
