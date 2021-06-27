@@ -13,9 +13,9 @@ class HeatSubscriber():
 		# Subscriber
 		rospy.Subscriber("heatSensor", Float32, self.messageReceive)
 
-		self.delay = 100 # How many ticks to wait
-		self.rate = 1e3 // self.delay
-		self.timeout_ticks = 5000 # Ticks until timeout
+		self.delay = 100
+		self.rate = 1e3 // self.delay # Hz
+		self.timeout_ticks = 5000 # Ticks until we idle
 
 	def spin(self):
 
